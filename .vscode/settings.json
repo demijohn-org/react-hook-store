@@ -1,0 +1,9 @@
+{
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true
+    },
+    "search.exclude": {
+        "**/node_modules": true,
+    },
+    "eslint.packageManager": "yarn"
+  }
