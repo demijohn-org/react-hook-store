@@ -1,12 +1,24 @@
 <div align="center">
-    <h2 align="center">
+    <h1 align="center">
         <a href="https://demijohn.io" title="React Hook Store">
             React Hook Store
         </a>
-    </h2>
+    </h1>
 </div>
 
 <p align="center">Simplistic store for your React app. Based on React hooks.</p>
+
+<div align="center">
+
+[![npm downloads](https://img.shields.io/npm/dm/@demijohn/react-hook-store?style=for-the-badge)](https://www.npmjs.com/package/@demijohn/react-hook-store)
+[![npm bundle size](https://img.shields.io/bundlephobia/min/@demijohn/react-hook-store?style=for-the-badge)](https://www.npmjs.com/package/@demijohn/react-hook-store)
+[![NPM](https://img.shields.io/npm/l/@demijohn/react-hook-store?style=for-the-badge)](https://www.npmjs.com/package/@demijohn/react-hook-store)
+[![npm](https://img.shields.io/npm/v/@demijohn/react-hook-store?label=version&style=for-the-badge)](https://www.npmjs.com/package/@demijohn/react-hook-store)
+
+</div>
+
+
+
 
 ## Install
 
