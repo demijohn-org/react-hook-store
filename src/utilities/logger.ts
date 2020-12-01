@@ -1,9 +1,9 @@
 export const logger = ({ path, previousState, nextState, value }: any) => {
+  const color = '#92ab43';
   (() => {
-    console.log(`%c|UPDATE in '${path}'`, 'color: #bada55');
-    console.log('%c|  data:', 'color: #bada55');
-    console.log('%c|', 'color: #bada55', { previousState });
-    console.log('%c|\t', 'color: #bada55', { value, path });
-    console.log('%c|', 'color: #bada55', { nextState });
+    console.log(`%cUPDATE in '${path}'`, `color: ${color}`);
+    console.log('%c | prev', `color: ${color}`, previousState);
+    console.log('%c | payload:', `color: ${color}`, { value, path });
+    console.log('%c | next', `color: ${color}`, nextState);
   })();
 };
