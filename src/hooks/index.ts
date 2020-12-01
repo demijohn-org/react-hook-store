@@ -4,9 +4,15 @@ import { ReactHookStoreContext } from './../provider/index';
 import { pathOr } from 'ramda';
 import { UpdateMode } from '../types';
 
-export function useStore<T>(path: string, defaultValue: T): T {
+export function useStore<T>(path: string, fallbackValue: T): T {
   const { state } = useContext(ReactHookStoreContext);
-  return pathOr(defaultValue, stringPathToArray(path), state);
+  return pathOr(fallbackValue, stringPathToArray(path), state);
+}
+
+export function useGetStore() {
+  const { state } = useContext(ReactHookStoreContext);
+  return (path: string, fallbackValue: any) =>
+    pathOr(fallbackValue, stringPathToArray(path), state);
 }
 
 export interface UpdateStoreOptions {
