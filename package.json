@@ -1,5 +1,5 @@
 {
-  "version": "0.2.1",
+  "version": "0.2.2",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -35,7 +35,7 @@
   },
   "name": "@demijohn/react-hook-store",
   "author": "Filip Zavadil",
-  "description": "Simplistic store based on React hooks.",
+  "description": "Easy-to-use state management based on React hooks.",
   "repository": "https://github.com/demijohn-org/react-hook-store",
   "website": "https://demijohn.io",
   "module": "dist/react-hook-store.esm.js",
@@ -49,6 +49,9 @@
       "limit": "10 KB"
     }
   ],
+  "dependencies": {
+    "ramda": "^0.27.1"
+  },
   "devDependencies": {
     "@size-limit/preset-small-lib": "^4.9.0",
     "@types/ramda": "^0.27.32",
@@ -60,8 +63,7 @@
     "size-limit": "^4.9.0",
     "tsdx": "^0.14.1",
     "tslib": "^2.0.3",
-    "typescript": "^3.4.5",
-    "ramda": "^0.27.1"
+    "typescript": "^3.4.5"
   }
  
 }

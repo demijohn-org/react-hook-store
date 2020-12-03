@@ -6,7 +6,7 @@
     </h1>
 </div>
 
-<p align="center">Simplistic store for your React app. Based on React hooks.</p>
+<p align="center">Easy-to-use state management based on React hooks..</p>
 
 <div align="center">
 
