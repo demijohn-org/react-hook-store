@@ -1,4 +1,4 @@
-import { useContext } from 'react';
+import { useCallback, useContext } from 'react';
 import { ReactHookStoreContext } from './../provider/index';
 
 import { UpdateMode } from '../types';
@@ -18,6 +18,10 @@ export function useUpdateStore({
   parent,
 }: UpdateStoreOptions = defaults) {
   const { updateState } = useContext(ReactHookStoreContext);
-  return (path: string, value: unknown): void =>
-    updateState([parent ? `${parent}.${path}` : path, value, mode]);
+
+  return useCallback(
+    (path: string, value: unknown): void =>
+      updateState([parent ? `${parent}.${path}` : path, value, mode]),
+    []
+  );
 }
